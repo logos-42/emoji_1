@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji幻境 - 冒险升级版</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Emoji幻境 - 冒险升级版</h1>
+        
+        <div class="game-grid">
+            <div class="card">
+                <h2>探险地图</h2>
+                <div id="map-grid" class="map-grid"></div>
+            </div>
+
+            <div class="card">
+                <h2>玩家状态</h2>
+                <div id="player-stats">
+                    <p>难度: <span id="difficulty-level">简单</span></p>
+                    <p>能量: <span id="energy">100</span>/100</p>
+                    <p>生命值: <span id="health">100</span>/100</p>
+                    <p>当前任务: <span id="current-task">无</span></p>
+                </div>
+                <h3>背包 <span id="inventory-count"></span></h3>
+                <div id="inventory-grid" class="inventory-grid"></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>事件日志</h2>
+            <div id="event-log" class="event-log"></div>
+        </div>
+
+        <div class="controls">
+            <button id="move-up">上</button>
+            <button id="move-down">下</button>
+            <button id="move-left">左</button>
+            <button id="move-right">右</button>
+        </div>
+
+        <div id="image-dialog" class="dialog">
+            <div class="dialog-content">
+                <h2>生成的图片</h2>
+                <img id="generated-image" alt="Generated Image">
+                <p id="emoji-combination"></p>
+                <button id="close-dialog">关闭</button>
+            </div>
+        </div>
+
+        <div id="battle-dialog" class="dialog">
+            <div class="dialog-content">
+                <h2>战斗!</h2>
+                <p id="battle-description"></p>
+                <button id="attack">攻击</button>
+                <button id="defend">防御</button>
+                <button id="flee">逃跑</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
